@@ -1,0 +1,10 @@
+<br>
+<div *ngFor= "let weather of weatherlist"  class='weather-element'>
+<div class='col-2'>
+    <h4>{{ weather.cityName }}</h4>
+    <p class='info'>{{ weather.forecast }}</p>   
+</div>
+<div class='col-2'>
+    <p class='temprature'>{{ weather.temprature }}</p>
+</div>
+</div>

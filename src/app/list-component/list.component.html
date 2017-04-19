@@ -1,0 +1,10 @@
+<br>
+<h4>This is my list page</h4>
+<div *ngFor = "let users of userList">
+    <div class="list-element">
+        <p class="name">{{users.firstName}} {{users.lastName}} </p>
+        {{users.email}} <br>
+        {{users.address}} <br>
+        {{users.phone}} <br>
+   </div> 
+</div>

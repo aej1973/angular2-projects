@@ -1,0 +1,11 @@
+.list-element {
+  box-shadow: 1px 1px 7px #668;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.name {
+  color: rgba(95, 95, 95, 0.51);
+  font-weight: bold;
+}
