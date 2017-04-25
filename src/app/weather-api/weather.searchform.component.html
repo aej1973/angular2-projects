@@ -1,0 +1,16 @@
+ <div class="col--1">
+ <form #cityinfo="ngForm" (ngSubmit)="onSubmit(cityinfo)">
+    <label>City</label>
+    <input 
+          type="text" 
+          id="location"
+          required     
+          name="location"     
+          #location='ngModel'
+          [(ngModel)] = "location.cityName"
+     >
+    <button type="submit">Add City</button>
+ </form>
+ </div>
+<div class="info col--2" ><span>City Name: {{location.cityName}}</span></div> 
+<br>

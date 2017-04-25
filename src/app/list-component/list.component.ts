@@ -14,6 +14,28 @@ export class ListComponent {
              firstName:"Arun",
              lastName: "Jayaprakash",
              email: "arunj@nr.com",
+             address: "4116 Choctaw Dr",            
+             phone: "800-123-1234"
+            },
+            {
+             firstName:"Mary",
+             lastName: "Jayaprakash",
+             email: "arunj@nr.com",
+             address: "4116 Choctaw Dr",       
+             phone: "800-123-1234"
+            },
+            {
+             firstName:"Sarah",
+             lastName: "Jayaprakash",
+             email: "arunj@nr.com",
+             address: "4116 Choctaw Dr",
+            
+             phone: "800-123-1234"
+            },
+            {
+             firstName:"Hannah",
+             lastName: "Jayaprakash",
+             email: "arunj@nr.com",
              address: "4116 Choctaw Dr",
              phone: "800-123-1234"
             },

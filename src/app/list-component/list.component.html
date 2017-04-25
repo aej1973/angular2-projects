@@ -1,10 +1,23 @@
 <br>
-<h4>This is my list page</h4>
-<div *ngFor = "let users of userList">
-    <div class="list-element">
-        <p class="name">{{users.firstName}} {{users.lastName}} </p>
-        {{users.email}} <br>
-        {{users.address}} <br>
-        {{users.phone}} <br>
-   </div> 
+<h4>List Page</h4>
+<div class="row" style="margin-top:0px;padding:0">
+   <div *ngFor = "let users of userList">
+    <div class="col-md-6" style="background-color: #FFF">
+      <div class="list-element">
+        <div id="colone">  
+            {{users.firstName}} {{users.lastName}} <br>
+            {{users.email}} <br>
+            {{users.address}} <br>
+            {{users.phone}} 
+        </div> 
+        <div id="coltwo">
+            <a><img src="https://www.nefa.org/sites/default/files/wheelchair.gif"  height="100" width="100"></a>
+        </div>     
+    </div> 
+  </div>
+ </div>
 </div>
+
+
+
+

@@ -1,0 +1,25 @@
+<br>
+<br>
+<h4>Display Person List</h4>
+<label>Search: <span *ngIf="name" >{{ name }}</span></label><br>
+<input class="search-input" #newArtist [value]="name">
+<button class="btn" (click) = addNewArtist(newArtist.value);>
+    Add 
+</button>
+
+<div class="row" style="margin-top:0px;padding:0">    
+   <div *ngFor = "let users of my_list">
+    <div class="col-md-6" style="background-color: #FFF">
+      <div class="list-element">
+        <div id="colone">  
+            <h4 (click) = onClick($event) >{{users.name}}</h4>
+            <p>{{users.school}}</p>
+            <p>{{users.description}}</p>           
+        </div> 
+        <div id="coltwo">
+            <a><img src="http://www.clipartbest.com/cliparts/4Tb/Kz7/4TbKz77Lc.png"  height="100" width="100"></a>
+        </div>     
+    </div> 
+  </div>
+ </div>
+</div>

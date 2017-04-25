@@ -10,9 +10,10 @@ import { IWeather } from './weather-interface';
     ]
 })
 export class WeatherApiComponent implements OnInit {
-        weatherlist : IWeather[];       
+        weatherlist : IWeather[];
+        constructor(private weatherSvs : WeatherService) {}      
         ngOnInit(): any {
-            this.weatherlist = WEATHER_LIST;
+            this.weatherlist = this.weatherSvs.getWeatherList();
         }
    
 }
